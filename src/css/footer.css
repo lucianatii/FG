@@ -1,0 +1,47 @@
+.containerFooter {
+  max-width: 100%;
+  background-color: #ececec;
+}
+
+.contentFooter {
+  padding: 1.563rem 0;
+}
+
+.containerFooter p.endereco {
+  font-size: 0.875rem;
+}
+
+.contentFooter p.email {
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contentFooter p.telefone {
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.contentFooter p:hover {
+  color: #e3a105;
+  transition: 0.5s;
+}
+
+address {
+  all: unset;
+}
+
+/* ---------RESPONSIVO */
+
+@media (max-width: 1300px) {
+  .contentFooter {
+    padding: 1.125rem 0;
+  }
+
+  .endereco,
+  .email,
+  .telefone {
+    padding: 0.3rem 0;
+  }
+}

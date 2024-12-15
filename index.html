@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="empresa-x, mundo corporativo, reuniões, mercado de trabalho" />
+  <meta name="description" content="Página de teste desenvolvida para a vaga de estágio em Desenvolvimento Web de Email Marketing - Agência FG">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Teste FG - Luciana Silva</title>
+</head>
+
+<body>
+
+  <header>
+    <!---------- HEADER MENU  -->
+    <section class="containerHeader">
+      <div class="navigation">
+        <div>
+          <img class="logo" src="./src/img/logo.png" alt="Logo da Empresa X">
+        </div>
+        <nav class="navBar">
+          <ul class="menuList">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Empresa</a></li>
+            <li><a href="/">Contato</a></li>
+          </ul>
+        </nav>
+        <span><a href="/">+55 11 3564-3099</a></span>
+      </div>
+    </section>
+
+    <!---------- SLIDESHOW  -->
+    <section>
+      <div class="slideShow">
+        <div class="mySlides fade">
+          <p class="slideText">50 anos <br> de mercado</p>
+          <a href="/">
+            <img src="./src/img/banner.jpg" alt="Três pessoas conversando em uma sala comercial e ao fundo se vê a cidade através de janelas de vidro">
+          </a>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="/">
+            <img src="./src/img/banner2.jpg" alt="Sala de reunião com mesa e cadeiras, além de um flip chart e uma televisão.">
+          </a>
+        </div>
+
+        <div class="mySlides fade">
+          <a href="/">
+            <img src="./src/img/banner3.jpg" alt="Papel com gráfico impresso e teclado de computador sobre uma mesa.">
+          </a>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)"> &#10094</a>
+        <a class="next" onclick="plusSlides(+1)">&#10095</a>
+      </div>
+
+      <div class="transition">
+        <span class="dot" onclick="currentSlide(1)"> </span>
+        <span class="dot" onclick="currentSlide(2)"> </span>
+        <span class="dot" onclick="currentSlide(3)"> </span>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!---------- SOBRE A EMPRESA  -->
+    <article class="conteudo" aria-labelledby="labelIntroducao">
+      <h1 id="labelIntroducao">A Empresa</h1>
+
+      <section class="introducao">
+        <div class="introducaoCover">
+          <img src="./src/img/empresa.jpg" alt="Homem de terno sentado em frente a uma mesa onde há um notebook, um copo com água e revistas">
+        </div>
+        <div class="empresaInfos">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tempor purus molestie, iaculis odio et, consectetur eros. Cras dapibus, ante vel sollicitudin porttitor, velit lorem efficitur elit, id tristique nulla odio vitae magna. Curabitur dignissim nunc in consectetur ullamcorper. Praesent gravida gravida tortor. Donec in ligula turpis. Duis ut urna id turpis hendrerit sagittis id sit amet nibh. Integer pellentesque felis maximus, pharetra ex ut, auctor quam. Nullam dignissim tellus non diam hendrerit dignissim. Curabitur hendrerit risus pellentesque elit molestie, ac viverra ligula facilisis. Praesent iaculis leo sit amet eros pharetra, quis rhoncus est rhoncus.</p>
+          <button><a href="/">Saiba mais »</a></button>
+        </div>
+      </section>
+
+      <section class="about">
+        <p>Duis ut urna id turpis hendrerit sagittis id sit amet nibh. Integer pellentesque felis maximus, pharetra ex ut, auctor quam. Nullam dignissim tellus non diam hendrerit dignissim. Curabitur hendrerit risus pellentesque elit molestie, ac viverra ligula facilisis. Praesent iaculis leo sit amet eros pharetra, quis rhoncus est rhoncus.</p>
+      </section>
+    </article>
+
+    <!---------- SOBRE A EQUIPE -->
+    <section class="equipe">
+
+      <div class="verEquipe">
+        <button id="btn-verEquipe">Veja nossa equipe </button>
+      </div>
+
+      <div id="contentEquipe" style="display: none;">
+        <figure class="imgEquipe">
+          <img src="./src/img/empresa.jpg" alt="">
+          <img src="./src/img/empresa.jpg" alt="">
+          <img src="./src/img/empresa.jpg" alt="">
+        </figure>
+      </div>
+
+    </section>
+  </main>
+
+  <!---------- FOOTER -->
+  <footer class="containerFooter">
+    <address class="contentFooter">
+      <p class="endereco">Rua Genérica, nº 123<br />
+        Centro - Santo André/SP</p>
+      <p class="email"><a href="mailto:contato@empresax.com.br">contato@empresax.com.br</a></p>
+      <p class="telefone">+55 11 3564-3099</p>
+    </address>
+
+  </footer>
+
+  <script src="./src/js/carrossel.js"></script>
+  <script src="./src/js/script.js"></script>
+</body>
+
+</html>

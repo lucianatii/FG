@@ -1,0 +1,74 @@
+.containerHeader {
+  background-color: #ececec;
+  padding: 1rem;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+nav ul {
+  display: flex;
+
+  gap: 30px;
+}
+
+.menuList a {
+  color: #858585;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.menuList a:hover {
+  color: #525252;
+  font-weight: 600;
+}
+
+span a {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-style: italic;
+
+  background-color: #f86a42;
+  padding: 0.8rem 0.8rem;
+}
+
+span a:hover {
+  background-color: #e6613d;
+  transition: 0.3s;
+}
+
+/* ---------RESPONSIVO */
+
+@media (max-width: 1300px) {
+  nav,
+  .navigation span {
+    padding: 0.8rem 0;
+  }
+
+  .navigation span a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    max-width: 80px;
+  }
+
+  .navigation span a {
+    font-size: 1rem;
+  }
+
+  .menuList a {
+    font-size: 0.75rem;
+  }
+}

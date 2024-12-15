@@ -1,0 +1,140 @@
+.conteudo {
+  max-width: 45%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f86a42;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-bottom: 1rem;
+}
+
+.introducaoCover img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.introducao p {
+  font-size: 0.75rem;
+}
+
+.empresaInfos {
+  display: grid;
+  justify-items: center;
+}
+
+button a {
+  background: #faae00;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button a:hover {
+  background: #e3a105;
+  transition: 0.2s;
+}
+
+section.about p {
+  font-size: 0.75rem;
+}
+
+.verEquipe {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+#btn-verEquipe {
+  display: grid;
+  justify-content: center;
+  background: #faae00;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#btn-verEquipe:hover {
+  background: #e3a105;
+  transition: 0.2s;
+}
+
+.imgEquipe {
+  max-width: 45%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.imgEquipe img {
+  max-width: 32%;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+/* ---------RESPONSIVO */
+@media (max-width: 1300px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+
+  .empresaInfos {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .imgEquipe {
+    flex-direction: column;
+  }
+
+  .imgEquipe img {
+    max-width: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .conteudo {
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button a,
+  #btn-verEquipe {
+    font-size: 0.875rem;
+  }
+
+  .introducao p,
+  section.about p {
+    font-size: 0.875rem;
+    font-weight: 100;
+  }
+
+  .imgEquipe img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgEquipe img {
+    max-width: 100%;
+  }
+}
